@@ -14,7 +14,7 @@ console.log(eventName);
 
 async function onScanSuccess(qrCodeMessage) {
   isScanning = false;
-  const data = await fetch("http://localhost/verification", {
+  const data = await fetch("https://dbfe-45-125-118-86.ngrok-free.app /verification", {
     method: "POST",
     headers: { "Content-Type": "application/json; charset=utf-8" },
     body: JSON.stringify({
